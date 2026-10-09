@@ -15,11 +15,10 @@ jobs:
         id: snake
         with:
           github_user_name: anuragsrawat
+          github_token: ${{ secrets.SNAKE_TOKEN }}
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.SNAKE_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
