@@ -17,8 +17,8 @@ jobs:
           github_user_name: anuragsrawat
           github_token: ${{ secrets.SNAKE_TOKEN }}
           outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
+            dist/snake.svg?color_snake=#7c3aed&color_dots=#ebedf0,#c4b5fd,#a78bfa,#8b5cf6,#6d28d9&color_dot_border=#ffffff&sizeDotBorderRadius=4
+            dist/snake-dark.svg?color_snake=#22d3ee&color_dots=#161b22,#0e7490,#06b6d4,#22d3ee,#a5f3fc&color_dot_border=#0d1117&sizeDotBorderRadius=4
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
